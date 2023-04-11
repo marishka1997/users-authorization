@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SignInComponent } from './components/sign-in/sign-in.component';
-import { UsersComponent } from './components/users/users.component';
-import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SignInModule } from './components/sign-in/sign-in.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent,
-    UsersComponent,
-    UserDetailsComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    RouterModule,
+    ReactiveFormsModule,
+    SignInModule,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
