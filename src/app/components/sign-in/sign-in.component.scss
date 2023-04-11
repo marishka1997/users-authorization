@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  section {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+
+      .text-danger {
+        font-size: 14px;
+        color: #dc3545;
+        margin-top: 5px;
+      }
+    }
+
+    button {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  // Mobile version
+  @media (max-width: 767px) {
+    max-width: 100%;
+
+    section {
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .form-container {
+      padding: 10px;
+
+      .form-group {
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          font-size: 14px;
+        }
+
+        .text-danger {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        font-size: 16px;
+        padding: 8px;
+      }
+    }
+  }
+
+  // Tablet version
+  @media (min-width: 768px) and (max-width: 991px) {
+    max-width: 100%;
+
+    section {
+      h3 {
+        font-size: 26px;
+      }
+    }
+
+    .form-container {
+      padding: 15px;
+
+      .form-group {
+        label {
+          font-size: 18px;
+        }
+
+        input {
+          font-size: 16px;
+        }
+
+        .text-danger {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+  }
+}
