@@ -1,1 +1,31 @@
-<p>users works!</p>
+<div class="table-container">
+  <h2 class="text-center fst-italic">List of registered users</h2>
+  <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th scope="col">ID.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Username</th>
+              <th scope="col">E-mail</th>
+              <th width="220px">Website</th>
+          </tr>
+      </thead>
+      <tbody>
+       <tr class="context-cells" *ngFor="let user of users" (click)="onClick()">
+          <td> {{user.id}} </td>
+          <td> {{user.name}} </td>
+          <td> {{user.username}} </td>
+          <td> {{user.email}} </td>
+          <td> {{user.website}} </td>
+          <div *ngIf="clicked" class="context-menu">
+              <a [routerLink]="['/user-details/', user.id]">
+                Details
+              </a>
+              <button (click)="remove(user.id)">
+                Delete
+              </button>
+            </div>
+        </tr>
+       </tbody>
+  </table>
+</div>
