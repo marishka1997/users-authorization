@@ -1,0 +1,13 @@
+<div id="details-container" *ngIf="user">
+  <div class="details">
+    <div class="userId">{{user.id}}</div>
+    <div class="username">{{user.username.charAt(0)}}</div>
+    <div class="name">{{user.name}}</div>
+    <div class="email">{{user.email}}</div>
+    <div class="social-media">
+      <a href="https://www.facebook.com/"><img src="../../assets/facebook.png" alt="facebook" width="20px" height="20px"/></a>
+      <a href="https://www.linkedin.com/"><img src="../../assets/linkedin.png" alt="linkedin" width="20px" height="20px"/></a>
+      <a href="https://www.google.com"><img src="../../assets/google-plus.png" alt="google+" width="20px" height="20px"/></a>
+    </div>
+  </div>
+</div>
