@@ -1,0 +1,89 @@
+#details-container {
+  /* width: 40%; */
+  height: 70%;
+  padding: 10px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  .details {
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-size: cover;
+   background: url(../../../assets/background.jpeg) no-repeat center left;
+    box-shadow: 6px 6px 1px 0px rgba(178, 178, 178, 0.47), 0px 0px 6px 1px rgba(56, 62, 68, 0.47);
+
+    .userId {
+      background-color: #e95c4b;
+      border-radius: 20px;
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: -5px;
+      margin-top: -4px;
+      color: #fff;
+      margin: -15px 0 0 -15px;
+      display: grid;
+      align-items: center;
+      color: #fff;
+      justify-content: center;
+    }
+
+    .username {
+      display: grid;
+      width: 150px;
+      height: 150px;
+      background-color: #33adff;
+      text-align: center;
+      font-size: 55px;
+      border-radius: 105px;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border: 2px solid #fff;
+      margin: 10px auto 45px auto;
+      box-shadow: 1px 1px 1px 0px rgba(178, 178, 178, 0.47);
+    }
+
+    .name {
+      margin: 8px auto;
+      width: max-content;
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .email {
+      margin: 8px auto;
+      width: max-content;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .social-media {
+      padding-top: 5px;
+      position: absolute;
+      margin: 0 -10px;
+      bottom: 0;
+      width: 299px;
+      height: 25px;
+      background: #333;
+      border-top: 1px solid gray;
+      text-align: center;
+
+      a img {
+        margin-left: 5px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
